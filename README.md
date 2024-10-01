@@ -101,6 +101,6 @@ Bonus experiments, including Double DQN and Dueling DQN, showed improvements in 
 ---
 
 ### References
-OpenAI Gym: https://gym.openai.com/
-Original Deep Q-Learning Paper by DeepMind: https://arxiv.org/pdf/1312.5602.pdf
-Exploration Strategies: https://lilianweng.github.io/lil-log/2020/06/07/exploration-strategies-in-deep-reinforcement-learning.html
+- OpenAI Gym: https://gym.openai.com/
+- Original Deep Q-Learning Paper by DeepMind: https://arxiv.org/pdf/1312.5602.pdf
+- Exploration Strategies: https://lilianweng.github.io/lil-log/2020/06/07/exploration-strategies-in-deep-reinforcement-learning.html
