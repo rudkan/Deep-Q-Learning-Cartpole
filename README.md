@@ -86,10 +86,10 @@ The Cartpole environment involves balancing a pole on a moving cart. The objecti
 ### Ablation Study
 - The ablation study systematically removes one or more components of the DQN algorithm to understand their impact on learning performance. The study compares:
 
-- DQN: Standard Deep Q-Network with all features.
-- DQN-ER: DQN without experience replay.
-- DQN-TN: DQN without a target network.
-- DQN-ER-TN: DQN without both experience replay and target network.
+   - DQN: Standard Deep Q-Network with all features.
+   - DQN-ER: DQN without experience replay.
+   - DQN-TN: DQN without a target network.
+   - DQN-ER-TN: DQN without both experience replay and target network.
 
 ---
 
