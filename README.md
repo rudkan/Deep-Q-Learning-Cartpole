@@ -68,31 +68,32 @@ The Cartpole environment involves balancing a pole on a moving cart. The objecti
 ---
 
 ### Exploration Strategies
-ϵ-greedy: The agent explores the environment by taking a random action with probability ϵ and the best-known action otherwise.
-Boltzmann Exploration: Actions are selected according to their estimated values' probabilities, controlled by a temperature parameter.
+- ϵ-greedy: The agent explores the environment by taking a random action with probability ϵ and the best-known action otherwise.
+- Boltzmann Exploration: Actions are selected according to their estimated values' probabilities, controlled by a temperature parameter.
 
 ---
 
 ### Experience Replay
-Experience replay stores past experiences (state, action, reward, next state) in a buffer. During training, random samples are drawn from this buffer to break correlation between consecutive experiences and stabilize learning.
+- Experience replay stores past experiences (state, action, reward, next state) in a buffer. During training, random samples are drawn from this buffer to break correlation between consecutive experiences and stabilize learning.
 
 ---
 
 ### Target Network
-A target network is used to make updates more stable by fixing the network used to generate target Q-values for some time while the main network is being trained.
+- A target network is used to make updates more stable by fixing the network used to generate target Q-values for some time while the main network is being trained.
 
 ---
 
 ### Ablation Study
-The ablation study systematically removes one or more components of the DQN algorithm to understand their impact on learning performance. The study compares:
+- The ablation study systematically removes one or more components of the DQN algorithm to understand their impact on learning performance. The study compares:
+
+- DQN: Standard Deep Q-Network with all features.
+- DQN-ER: DQN without experience replay.
+- DQN-TN: DQN without a target network.
+- DQN-ER-TN: DQN without both experience replay and target network.
 
 ---
 
-DQN: Standard Deep Q-Network with all features.
-DQN-ER: DQN without experience replay.
-DQN-TN: DQN without a target network.
-DQN-ER-TN: DQN without both experience replay and target network.
-Results and Conclusion
+### Results and Conclusion
 The DQN agent successfully learns to balance the cartpole in the OpenAI Gym environment.
 The ablation study highlights the importance of experience replay and the target network in improving learning stability and performance.
 Bonus experiments, including Double DQN and Dueling DQN, showed improvements in some cases, particularly in terms of stability.
